@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/Mundi_logo.png">
+</head>
+
+<body>
+    <nav>
+        <div class="barra">
+            <div class="btnMenu"><a>☰</a></div>
+            <img src="images/Logo_principal.png" alt="">
+        </div>
+        <ul class="navegacion">
+            <li class="item"><a href="index.html">Inicio</a></li>
+            <li class="item"><a href="talles.html">Guia de talles</a></li>
+            <li class="item"><a href="contacto.html">Contacto</a></li>
+            <li class="item">inventario</li>
+        </ul>
+    </nav>
+    <h2 class="subtitulo">Catalogo</h2>
+    <div class="tablaDinamica">
+        <div class="scrollTabla">
+            <table>
+                <thead>
+                    <td>Codigo articulo</td>
+                    <td>Prenda</td>
+                    <td>Precio</td>
+                    <td>Talle</td>
+                </thead>
+                <tbody id="tablaCatalogo"></tbody>
+            </table>
+        </div>
+    </div>
+    <form class="formularioCatalogo">
+        <h2 class="subtitulo">Cargar datos</h2>
+        <div>
+            <label for="codigoArticulo">Codigo articulos:</label>
+            <input class="jsCampoArticulo" type="text" id="codigoArticulo">
+        </div>
+        <div>
+            <label for="prenda">Prenda:</label>
+            <input class="jsCampoArticulo" type="text" id="prenda">
+        </div>
+        <div>
+            <label for="precio">Precio:</label>
+            <input class="jsCampoArticulo" type="text" id="precio">
+        </div>
+        <div>
+            <label for="talle">Talle:</label>
+            <input class="jsCampoArticulo" type="text" id="talle">
+        </div>
+        <div class="botonera">
+            <button id="agregar">Agregar articulo</button>
+            <button id="agregar3">Agregar 3 articulos</button>
+            <button id="eliminar">Eliminar todo</button>
+        </div>
+    </form>
+    <footer>2023 Cepeda Victoria, Cuartas Sofia</footer>
+    <script src="js/main.js"></script>
+    <script src="js/inventario.js"></script>
+</body>
